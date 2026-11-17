@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Street Wear — moda urbana, atitude e estilo para todos os dias.">
+  <title>STREET WEAR — Vista sua atitude</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">FRETE GRÁTIS EM PEDIDOS ACIMA DE R$ 249 <span>✦</span> ESTILO SEM LIMITES</div>
+  <header class="header">
+    <a class="logo" href="#" aria-label="Street Wear início">STREET<span>WEAR</span><i>®</i></a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#colecao">NOVIDADES</a><a href="#colecao">ROUPAS</a><a href="#sobre">SOBRE</a>
+    </nav>
+    <button class="cart-button" id="open-cart" aria-label="Abrir carrinho">SACOLA <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">NOVA COLEÇÃO • 2026</p>
+        <h1>VISTA SUA<br><span>ATITUDE.</span></h1>
+        <p class="hero-description">Seu estilo, suas regras. Peças urbanas para quem não nasceu para passar despercebido.</p>
+        <a class="button button-light" href="#colecao">EXPLORAR COLEÇÃO <span>↗</span></a>
+      </div>
+      <div class="hero-stamp"><span>STREET</span><b>IS A<br>STATE<br>OF MIND.</b><small>EST. 2026</small></div>
+      <div class="hero-bottom"><span>01 / DROP URBANO</span><span>USE O QUE TE REPRESENTA ↓</span></div>
+    </section>
+
+    <section class="category-strip" aria-label="Categorias">
+      <a href="#colecao" data-filter="Todos">01 — TUDO</a>
+      <a href="#colecao" data-filter="Camisetas">02 — CAMISETAS</a>
+      <a href="#colecao" data-filter="Moletons">03 — MOLETONS</a>
+      <a href="#colecao" data-filter="Calças">04 — CALÇAS</a>
+      <a href="#colecao" data-filter="Acessórios">05 — ACESSÓRIOS</a>
+    </section>
+
+    <section class="collection section" id="colecao">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">ESCOLHIDOS PARA VOCÊ</p><h2>PEÇAS EM <span>DESTAQUE.</span></h2></div>
+        <p>Uma seleção de peças para elevar<br>o seu visual todos os dias.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="Todos">TODOS</button>
+        <button class="filter" data-filter="Camisetas">CAMISETAS</button>
+        <button class="filter" data-filter="Moletons">MOLETONS</button>
+        <button class="filter" data-filter="Calças">CALÇAS</button>
+        <button class="filter" data-filter="Acessórios">ACESSÓRIOS</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="manifesto" id="sobre">
+      <div class="manifesto-mark">SW.</div>
+      <div><p class="eyebrow">MAIS QUE ROUPA. É IDENTIDADE.</p><h2>O SEU ESTILO<br>NÃO PRECISA<br>DE <span>PERMISSÃO.</span></h2></div>
+      <p class="manifesto-note">A rua inspira. Você transforma. Encontre peças que combinam com quem você é e crie seu próprio caminho.</p>
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">FIQUE POR DENTRO</p><h2>O PRÓXIMO DROP<br><span>COMEÇA AQUI.</span></h2></div>
+      <form id="newsletter-form"><label for="email">SEU E-MAIL</label><div class="email-row"><input id="email" type="email" placeholder="voce@email.com" required><button type="submit" aria-label="Cadastrar e-mail">→</button></div><small>Novidades, lançamentos e ofertas em primeira mão.</small></form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo" href="#">STREET<span>WEAR</span><i>®</i></a><p>VISTA SUA ATITUDE. © 2026 STREET WEAR.</p><a href="#top" class="back-top">VOLTAR AO TOPO ↑</a></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Sua sacola" aria-hidden="true">
+    <div class="cart-head"><div><p class="eyebrow dark">SEU ESTILO COMEÇA AQUI</p><h2>SUA SACOLA <span id="drawer-count">(0)</span></h2></div><button id="close-cart" class="close-cart" aria-label="Fechar sacola">×</button></div>
+    <div class="cart-items" id="cart-items"><p class="empty-cart">Sua sacola está vazia.<br>Que tal encontrar algo novo?</p></div>
+    <div class="cart-footer"><div class="subtotal"><span>SUBTOTAL</span><strong id="cart-total">R$ 0,00</strong></div><p>Frete e prazo combinados no atendimento.</p><button class="button button-dark checkout" id="checkout">FINALIZAR PELO WHATSAPP ↗</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
