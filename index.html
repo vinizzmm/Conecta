@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#111111">
-<meta name="description" content="Street Wear: moda urbana, guia de tamanhos, materiais, cuidados e informações para comprar com confiança.">
-<title>STREET WEAR — Vista sua atitude</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="Conecta — informação simples para navegar com segurança, proteger seus dados e aproveitar a tecnologia.">
+  <title>CONECTA | Tecnologia sem complicação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="topline">MODA URBANA • IDENTIDADE • LIBERDADE</div>
-<header class="header"><a class="logo" href="#inicio">STREET<span>WEAR</span><i>®</i></a>
-<nav class="nav"><a href="#colecao">COLEÇÃO</a><a href="#guia">GUIA DE TAMANHOS</a><a href="#materiais">MATERIAIS</a><a href="#ajuda">DÚVIDAS</a></nav>
-<button class="cart-button" id="open-cart">SACOLA <span id="cart-count">0</span></button></header>
+<header class="site-header">
+  <a class="brand" href="#inicio" aria-label="Conecta, início"><span class="brand-mark">C<span>.</span></span><span>CONECTA<small>TECNOLOGIA SEM COMPLICAÇÃO</small></span></a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="main-nav">
+    <a href="#seguranca">Segurança digital</a><a href="#guias">Guias</a><a href="#glossario">Glossário</a><a href="#quiz">Quiz</a>
+  </nav>
+  <a class="header-cta" href="#dicas">APRENDA A SE PROTEGER <span>↗</span></a>
+</header>
 <main>
-<section class="hero" id="inicio"><div class="hero-content"><p class="eyebrow">DROP 001 — ESTILO URBANO</p><h1>SEU ESTILO.<br><span>SUAS REGRAS.</span></h1><p class="hero-text">Peças inspiradas na cultura das ruas, feitas para acompanhar sua rotina e expressar sua personalidade.</p><a class="button lime" href="#colecao">CONHEÇA A COLEÇÃO ↘</a></div><div class="hero-note"><b>STREET<br>IS A STATE<br>OF MIND.</b><span>EST. 2026</span></div><div class="hero-foot"><span>ROUPAS PARA IR ALÉM DO BÁSICO</span><span>01 / 04</span></div></section>
-<div class="ticker"><span>VISTA SUA ATITUDE</span><b>✳</b><span>CRIE SEU PRÓPRIO CAMINHO</span><b>✳</b><span>VISTA SUA ATITUDE</span></div>
-<section class="section collection" id="colecao"><div class="section-title"><div><p class="eyebrow dark">ESCOLHA SUA PEÇA</p><h2>DROP <span>URBANO.</span></h2></div><p>Explore as categorias e encontre<br>o que combina com você.</p></div>
-<div class="filters" id="filters"><button class="filter active" data-filter="Todos">TODOS</button><button class="filter" data-filter="Camisetas">CAMISETAS</button><button class="filter" data-filter="Moletons">MOLETONS</button><button class="filter" data-filter="Calças">CALÇAS</button><button class="filter" data-filter="Acessórios">ACESSÓRIOS</button></div>
-<p class="catalog-note">Os produtos, imagens e preços abaixo são exemplos demonstrativos para a montagem da loja.</p><div class="product-grid" id="product-grid"></div></section>
-<section class="editorial" id="sobre"><div class="editorial-image"></div><div class="editorial-copy"><p class="eyebrow">NOSSA IDEIA</p><h2>ROUPA É MAIS<br>QUE <span>APARÊNCIA.</span></h2><p>A Street Wear nasce da cultura urbana: música, arte, esporte e a liberdade de misturar referências. Acreditamos que estilo não tem fórmula. É sobre escolher o que faz sentido para você.</p><a href="#materiais" class="text-link">DESCUBRA COMO ESCOLHER SUA PEÇA ↗</a></div></section>
-<section class="section info-section" id="materiais"><div class="section-title"><div><p class="eyebrow dark">COMPRE COM MAIS INFORMAÇÃO</p><h2>CONHEÇA OS <span>MATERIAIS.</span></h2></div><p>Entender o tecido ajuda a escolher<br>uma peça que combina com sua rotina.</p></div><div class="info-grid">
-<article class="info-card"><span>01 / ALGODÃO</span><h3>Toque macio</h3><p>Fibra conhecida pelo conforto e pela boa respirabilidade. É comum em camisetas e peças para o dia a dia.</p></article>
-<article class="info-card"><span>02 / MOLETOM</span><h3>Conforto e aconchego</h3><p>Malha mais encorpada, geralmente usada em blusas e calças. Ideal para dias amenos ou ambientes frios.</p></article>
-<article class="info-card"><span>03 / SARJA</span><h3>Estrutura e resistência</h3><p>Tecido de trama marcada, bastante usado em calças e jaquetas. Pode ter diferentes composições e espessuras.</p></article>
-</div><p class="small-note">A composição exata de cada peça deve ser conferida na etiqueta e na descrição do produto quando o catálogo real for cadastrado.</p></section>
-<section class="size-section" id="guia"><div class="size-intro"><p class="eyebrow">ENCONTRE SEU TAMANHO</p><h2>CAIMENTO<br><span>DO SEU JEITO.</span></h2><p>Use esta tabela como referência inicial. As medidas podem variar conforme o modelo e a modelagem da peça.</p><div class="measure-tip"><b>DICA:</b> compare as medidas com uma roupa sua que tenha um caimento parecido com o que você procura.</div></div><div class="size-table-wrap"><h3>GUIA DE MEDIDAS — CAMISETAS (REFERÊNCIA)</h3><table><thead><tr><th>TAMANHO</th><th>PEITO</th><th>COMPRIMENTO</th></tr></thead><tbody><tr><td>P</td><td>96 cm</td><td>68 cm</td></tr><tr><td>M</td><td>102 cm</td><td>71 cm</td></tr><tr><td>G</td><td>108 cm</td><td>74 cm</td></tr><tr><td>GG</td><td>116 cm</td><td>77 cm</td></tr></tbody></table><p class="small-note">Medidas ilustrativas, não correspondem a um fornecedor específico. Atualize a tabela após definir os produtos reais.</p></div></section>
-<section class="section care-section"><div class="section-title"><div><p class="eyebrow dark">DURABILIDADE TAMBÉM É ESTILO</p><h2>CUIDE BEM DA <span>SUA PEÇA.</span></h2></div></div><div class="care-grid"><div><b>01</b><h3>Leia a etiqueta</h3><p>Confira as instruções de lavagem de cada roupa antes de colocar na máquina.</p></div><div><b>02</b><h3>Separe as cores</h3><p>Lave peças claras e escuras separadamente para ajudar a conservar as cores.</p></div><div><b>03</b><h3>Evite excesso de calor</h3><p>Observe a indicação de temperatura para secagem e passagem a ferro.</p></div><div><b>04</b><h3>Guarde com cuidado</h3><p>Deixe as peças secarem completamente antes de guardar.</p></div></div></section>
-<section class="faq-section" id="ajuda"><div><p class="eyebrow">INFORMAÇÕES IMPORTANTES</p><h2>ANTES DE <span>COMPRAR.</span></h2><p class="faq-intro">Respostas rápidas para você saber como funciona a loja.</p></div><div class="faq-list">
-<details><summary>Como funciona a entrega?</summary><p>O prazo e o valor do frete dependem do CEP e da forma de envio. Nesta versão demonstrativa, a entrega ainda precisa ser configurada com um serviço de frete.</p></details>
-<details><summary>Posso trocar ou devolver um produto?</summary><p>As condições de troca e devolução devem ser informadas pela loja antes da venda. Em compras online no Brasil, o consumidor também possui direitos previstos no Código de Defesa do Consumidor, incluindo o direito de arrependimento nas situações previstas em lei.</p></details>
-<details><summary>Quais formas de pagamento são aceitas?</summary><p>O pagamento online ainda não está integrado. A sacola prepara o pedido para atendimento pelo WhatsApp; nenhum pagamento é realizado pelo site nesta versão.</p></details>
-<details><summary>Os produtos e preços já são definitivos?</summary><p>Não. Os itens exibidos são exemplos para demonstrar o funcionamento do catálogo. É necessário cadastrar produtos, fotos, tamanhos, estoque e preços reais antes de divulgar a loja.</p></details>
-</div></section>
-<section class="contact-band"><div><p class="eyebrow">FICOU COM DÚVIDA?</p><h2>FALE COM A <span>GENTE.</span></h2><p>Configure o WhatsApp oficial da loja no código para receber pedidos e perguntas.</p></div><a class="button lime" href="#colecao">VOLTAR À COLEÇÃO ↑</a></section>
+<section class="hero" id="inicio">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <p class="eyebrow"><span class="pulse"></span> CONHECIMENTO DIGITAL PARA TODO MUNDO</p>
+    <h1>A internet muda.<br><span>Seu conhecimento</span><br>vai junto.</h1>
+    <p class="hero-lead">Entenda a tecnologia, proteja suas informações e faça escolhas melhores no mundo digital. Sem complicação e com dicas que funcionam na vida real.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#seguranca">EXPLORAR CONTEÚDOS <span>↓</span></a><a class="text-link" href="#sobre">Conheça o projeto <span>↗</span></a></div>
+    <div class="hero-stats"><div><strong>01</strong><span>INFORMAÇÃO<br>CLARA</span></div><div><strong>02</strong><span>DICAS<br>PRÁTICAS</span></div><div><strong>03</strong><span>MAIS SEGURANÇA<br>ONLINE</span></div></div>
+  </div>
+  <div class="hero-art" aria-label="Ilustração abstrata de conexão digital"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="core"><span>✳</span><b>ON</b></div><div class="float-card card-top"><span class="mini-icon">⌁</span><div><b>Conexão ativa</b><small>Conhecimento em rede</small></div><i></i></div><div class="float-card card-bottom"><span class="shield">✓</span><div><b>Seus dados</b><small>Merecem proteção</small></div></div><span class="art-caption">CONECTAR • APRENDER • PROTEGER</span></div>
+  <div class="hero-bottom"><span>INFORMAÇÃO É PODER.</span><span>ROLE PARA DESCOBRIR ↓</span></div>
+</section>
+<section class="topic-strip"><span>SEGURANÇA DIGITAL</span><b>✳</b><span>TECNOLOGIA</span><b>✳</b><span>PRIVACIDADE</span><b>✳</b><span>CIDADANIA DIGITAL</span></section>
+<section class="section intro-section" id="sobre">
+  <div class="section-kicker">01 / SOBRE O CONECTA</div>
+  <div class="intro-copy"><h2>TECNOLOGIA É<br>PARA <span>ENTENDER.</span></h2><div><p>O Conecta é um espaço informativo criado para aproximar as pessoas da tecnologia. Aqui, assuntos que parecem difíceis viram explicações simples, exemplos e atitudes que você pode aplicar no dia a dia.</p><a class="under-link" href="#guias">VEJA OS GUIAS <span>↗</span></a></div></div>
+  <div class="value-row"><article><span>✳</span><h3>Aprenda</h3><p>Descubra como ferramentas e serviços digitais funcionam.</p></article><article><span>⌑</span><h3>Questione</h3><p>Confira informações antes de compartilhar ou acreditar.</p></article><article><span>◈</span><h3>Proteja-se</h3><p>Cuide das suas contas, senhas e dados pessoais.</p></article></div>
+</section>
+<section class="dark-section" id="seguranca">
+  <div class="section section-inner">
+    <div class="section-heading"><div><div class="section-kicker light">02 / SEGURANÇA DIGITAL</div><h2>SEU MUNDO ONLINE.<br><span>SUAS REGRAS.</span></h2></div><p>Pequenos cuidados fazem diferença. Conheça atitudes simples para reduzir riscos e navegar com mais tranquilidade.</p></div>
+    <div class="security-grid">
+      <article class="security-card"><div class="card-symbol">⌑</div><span class="card-number">01 — CONTAS</span><h3>Senhas fortes e únicas</h3><p>Evite usar a mesma senha em vários serviços. Prefira combinações longas e difíceis de adivinhar. Um gerenciador de senhas confiável pode ajudar.</p><a href="#dicas">VER DICAS <span>↗</span></a></article>
+      <article class="security-card featured"><div class="card-symbol">◎</div><span class="card-number">02 — ACESSO</span><h3>Verificação em duas etapas</h3><p>Além da senha, uma segunda confirmação ajuda a impedir acessos indevidos. Ative esse recurso nas contas que oferecem a opção.</p><a href="#dicas">VER DICAS <span>↗</span></a></article>
+      <article class="security-card"><div class="card-symbol">◇</div><span class="card-number">03 — PRIVACIDADE</span><h3>Pense antes de publicar</h3><p>Fotos, localização e dados pessoais podem revelar mais do que você imagina. Revise as configurações de privacidade dos aplicativos.</p><a href="#dicas">VER DICAS <span>↗</span></a></article>
+    </div>
+  </div>
+</section>
+<section class="section guides-section" id="guias">
+  <div class="section-kicker">03 / CENTRAL DE CONHECIMENTO</div>
+  <div class="section-heading"><h2>GUIAS PARA A<br><span>VIDA DIGITAL.</span></h2><p>Escolha um assunto e descubra o que fazer em situações comuns na internet.</p></div>
+  <div class="guide-grid">
+    <article class="guide-card"><div class="guide-visual visual-phishing"><span>01</span><b>!</b><small>ATENÇÃO AO LINK</small></div><div class="guide-body"><span class="tag">GOLPES ONLINE</span><h3>Como reconhecer uma mensagem suspeita?</h3><p>Desconfie de urgência exagerada, ofertas boas demais, erros estranhos e pedidos de códigos ou senhas. Confirme a informação por um canal oficial.</p><details><summary>O que fazer se receber uma?</summary><p>Não clique nem responda. Não envie códigos. Acesse o aplicativo ou site oficial digitando o endereço por conta própria e denuncie a mensagem na plataforma.</p></details></div></article>
+    <article class="guide-card"><div class="guide-visual visual-password"><span>02</span><b>••••••</b><small>ACESSO PROTEGIDO</small></div><div class="guide-body"><span class="tag">CONTAS E SENHAS</span><h3>Como criar hábitos melhores com senhas?</h3><p>Use uma senha diferente para cada conta importante e não compartilhe códigos de recuperação. Atualize senhas se houver suspeita de vazamento.</p><details><summary>Preciso trocar toda hora?</summary><p>Não é necessário trocar sem motivo. Crie senhas fortes e únicas e altere-as quando houver suspeita de acesso indevido ou exposição.</p></details></div></article>
+    <article class="guide-card"><div class="guide-visual visual-wifi"><span>03</span><b>⌁</b><small>CONEXÃO CONSCIENTE</small></div><div class="guide-body"><span class="tag">WI-FI E DISPOSITIVOS</span><h3>Cuidados ao usar redes Wi-Fi públicas</h3><p>Prefira sites com conexão segura, mantenha o aparelho atualizado e evite acessar informações sensíveis em redes que você não conhece.</p><details><summary>O que mais posso fazer?</summary><p>Desative a conexão automática a redes desconhecidas, compartilhe menos dados e use os aplicativos oficiais. Se possível, utilize sua própria conexão para tarefas importantes.</p></details></div></article>
+  </div>
+</section>
+<section class="tips-section" id="dicas">
+  <div class="tips-copy"><div class="section-kicker light">04 / CHECKLIST PRÁTICO</div><h2>5 PASSOS PARA<br>FICAR MAIS <span>SEGURO.</span></h2><p>Marque os cuidados que você já colocou em prática. Seu progresso é atualizado na hora.</p><div class="progress-wrap"><div class="progress-label"><span>SEU PROGRESSO</span><b id="progress-text">0 de 5</b></div><div class="progress-track"><div id="progress-bar"></div></div></div></div>
+  <div class="checklist" id="checklist">
+    <label><input type="checkbox"><span class="check"></span><span><b>Ative a verificação em duas etapas</b><small>Comece pelas contas de e-mail e redes sociais.</small></span><em>01</em></label>
+    <label><input type="checkbox"><span class="check"></span><span><b>Use senhas diferentes</b><small>Não repita a mesma senha em todos os serviços.</small></span><em>02</em></label>
+    <label><input type="checkbox"><span class="check"></span><span><b>Revise a privacidade dos aplicativos</b><small>Confira quem pode ver suas publicações e dados.</small></span><em>03</em></label>
+    <label><input type="checkbox"><span class="check"></span><span><b>Mantenha seus dispositivos atualizados</b><small>Atualizações corrigem falhas e melhoram a proteção.</small></span><em>04</em></label>
+    <label><input type="checkbox"><span class="check"></span><span><b>Desconfie de links inesperados</b><small>Confirme remetente e endereço antes de clicar.</small></span><em>05</em></label>
+  </div>
+</section>
+<section class="section glossary-section" id="glossario">
+  <div class="section-kicker">05 / TRADUZINDO A TECNOLOGIA</div><div class="section-heading"><h2>GLOSSÁRIO<br><span>SEM COMPLICAÇÃO.</span></h2><p>Palavras que aparecem no mundo digital, explicadas de um jeito direto.</p></div>
+  <div class="glossary-grid">
+    <article><b>01</b><h3>Phishing</h3><p>Golpe que tenta enganar alguém para obter dados, senhas ou informações pessoais por mensagens e páginas falsas.</p></article>
+    <article><b>02</b><h3>Backup</h3><p>Cópia de segurança de arquivos importantes, guardada para ajudar a recuperar informações se algo acontecer com o original.</p></article>
+    <article><b>03</b><h3>Autenticação</h3><p>Processo usado para confirmar que você é realmente a pessoa tentando entrar em uma conta.</p></article>
+    <article><b>04</b><h3>Algoritmo</h3><p>Conjunto de instruções que ajuda um sistema a realizar tarefas ou resolver um problema.</p></article>
+    <article><b>05</b><h3>Nuvem</h3><p>Serviços que permitem guardar ou acessar arquivos e aplicações pela internet, em servidores remotos.</p></article>
+    <article><b>06</b><h3>Dados pessoais</h3><p>Informações relacionadas a uma pessoa, como nome, telefone, endereço e outros dados que podem identificá-la.</p></article>
+  </div>
+</section>
+<section class="quiz-section" id="quiz">
+  <div class="quiz-intro"><div class="section-kicker light">06 / TESTE SEU CONHECIMENTO</div><h2>VOCÊ ESTÁ<br><span>ESPERTO ONLINE?</span></h2><p>Responda a três perguntas rápidas e veja o quanto aprendeu sobre segurança digital.</p></div>
+  <div class="quiz-box" id="quiz-box"><div class="quiz-top"><span>QUIZ CONECTA</span><span id="quiz-step">PERGUNTA 1 DE 3</span></div><div class="quiz-question" id="quiz-question"></div><div class="quiz-options" id="quiz-options"></div><p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p><button class="btn btn-primary quiz-next" id="quiz-next" disabled>PRÓXIMA PERGUNTA →</button></div>
+</section>
+<section class="sources-section"><div><div class="section-kicker">07 / PARA CONTINUAR APRENDENDO</div><h2>INFORMAÇÃO<br>DE <span>CONFIANÇA.</span></h2></div><div class="source-links"><a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener noreferrer"><span>ANPD — Autoridade Nacional de Proteção de Dados</span><b>↗</b></a><a href="https://cartilha.cert.br/" target="_blank" rel="noopener noreferrer"><span>CERT.br — Cartilha de Segurança para Internet</span><b>↗</b></a><a href="https://www.safernet.org.br/" target="_blank" rel="noopener noreferrer"><span>SaferNet Brasil — Segurança e cidadania digital</span><b>↗</b></a><p>Consulte fontes especializadas para informações atualizadas. Este site tem finalidade educativa e não substitui orientações oficiais.</p></div></section>
 </main>
-<footer class="footer"><a class="logo" href="#inicio">STREET<span>WEAR</span><i>®</i></a><p>MODA URBANA E IDENTIDADE. © 2026 STREET WEAR.</p><a href="#inicio">VOLTAR AO TOPO ↑</a></footer>
-<div class="overlay" id="overlay"></div><aside class="cart-drawer" id="cart-drawer" aria-hidden="true"><div class="cart-head"><div><p class="eyebrow dark">SEU PEDIDO</p><h2>SUA SACOLA <span id="drawer-count">(0)</span></h2></div><button id="close-cart" class="close-cart">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-footer"><div class="subtotal"><span>SUBTOTAL</span><strong id="cart-total">R$ 0,00</strong></div><p>Frete e pagamento serão combinados no atendimento.</p><button class="button checkout" id="checkout">ENVIAR PEDIDO PELO WHATSAPP ↗</button></div></aside><div class="toast" id="toast" role="status"></div>
-<script src="script.js"></script></body></html>
+<footer class="footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">C<span>.</span></span><span>CONECTA<small>TECNOLOGIA SEM COMPLICAÇÃO</small></span></a><p>INFORMAÇÃO PARA UM MUNDO MAIS CONECTADO.</p><a href="#inicio">VOLTAR AO TOPO ↑</a><small>© 2026 CONECTA. PROJETO INFORMATIVO.</small></footer>
+<script src="script.js"></script>
+</body>
+</html>
